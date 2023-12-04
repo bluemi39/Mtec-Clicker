@@ -18,6 +18,8 @@ public class ClickScript : MonoBehaviour
     public float delay = 3;
     public float increment = 0.25f;
 
+    int Winner = 0;
+
     void Start()
     {
         
@@ -46,11 +48,17 @@ public class ClickScript : MonoBehaviour
             AdjustDelay(-increment);
         }
 
-        if (clickCount ==3)
+        if (clickCount == 3)
         {
+            //Try to online only Debug.log while value is less than something then dont debug . log anymore.
+            
+
+            if (Winner < 1) { 
             Debug.Log("Congratulations on hacking the safe, you won the game"); //learn from online search
             //delay = 5;
             Debug.Log("Click again to clear the click counter");
+                Winner = Winner + 1;
+        }
             // yield return new
             // WaitForSeconds(1);
             // clickCount = 0;
