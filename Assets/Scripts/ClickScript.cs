@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 using System;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class ClickScript : MonoBehaviour
 {
@@ -69,6 +70,7 @@ public class ClickScript : MonoBehaviour
         if (clickCount == 4)
         {
             clickCount = 0;
+            SceneManager.LoadScene(1);
         }
 
     }
