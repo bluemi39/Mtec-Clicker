@@ -53,7 +53,7 @@ public class ClickScript_2 : MonoBehaviour
         {
             //Try to online only Debug.log while value is less than something then dont debug . log anymore.
             
-
+            //If the integer Winner is less than one, run the if statement
             if (Winner < 1) { 
             Debug.Log("Congratulations on hacking the safe, you won the game"); //learn from online search
             //delay = 5;
