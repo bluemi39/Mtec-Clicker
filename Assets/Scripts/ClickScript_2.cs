@@ -49,7 +49,7 @@ public class ClickScript_2 : MonoBehaviour
             AdjustDelay(-increment);
         }
 
-        if (clickCount == 3)
+        if (clickCount == 2)
         {
             //Try to online only Debug.log while value is less than something then dont debug . log anymore.
             
@@ -67,10 +67,11 @@ public class ClickScript_2 : MonoBehaviour
             //Break;
         }
 
-        if (clickCount == 4)
+        if (clickCount == 3)
         {
             clickCount = 0;
-           // SceneManager.LoadScene(1);
+            Winner = 0;
+           SceneManager.LoadScene(2);
         }
 
     }

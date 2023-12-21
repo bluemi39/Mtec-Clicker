@@ -7,7 +7,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 
-public class ClickScript : MonoBehaviour
+public class ClickScript_3 : MonoBehaviour
 {
 
     public TextMeshProUGUI clickText;
@@ -49,11 +49,11 @@ public class ClickScript : MonoBehaviour
             AdjustDelay(-increment);
         }
 
-        if (clickCount == 3)
+        if (clickCount == 5)
         {
             //Try to online only Debug.log while value is less than something then dont debug . log anymore.
             
-
+            //If the integer Winner is less than one, run the if statement
             if (Winner < 1) { 
             Debug.Log("Congratulations on hacking the safe, you won the game"); //learn from online search
             //delay = 5;
@@ -67,11 +67,10 @@ public class ClickScript : MonoBehaviour
             //Break;
         }
 
-        if (clickCount == 4)
+        if (clickCount == 6)
         {
             clickCount = 0;
-            Winner = 0;
-            SceneManager.LoadScene(1);
+           //SceneManager.LoadScene();
         }
 
     }
